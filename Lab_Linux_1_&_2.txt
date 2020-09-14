@@ -54,39 +54,5 @@ The command is #cd or #cd ~
 #rmdir testdir
 
 
-Lab 2 (Solution).
-==================
-1. First go to your home directory.
-To go to your home directory #cd ~ or #cd  or #cd /root or #cd /home/cloud-user
-
-2. Make a ‘LinuxClass’ directory using the mkdir command & go into that directory.
-#mkdir LinuxClass
-#cd LinuxClass
-
-3. Create 5 empty files in LinuxClass directory.
-#touch file1 file2 file3 file4 file5
-
-Show permission of newly created files.
-#ls -l
-#ls -l file1 file2 file3 file4 file5
-
-4. Add execute permission for group on 2 of the files and make other 3 world readable.
-#chmod g+x file1 ; chmod g+x file2
-#chmod o+r file3 ; chmod o+r file4 ; chmod o+r file5
-
-**try doing this using numeric value too.
-
-5. Now, remove the execute permission of LinuxClass for all.
-#chmod -R o-x LinuxClass
-
-6. Change directory to your home directory, then try to see all files under LinuxClass and then finally go into that directory.
-#cd ~
-#ls -l LinuxClass
-#cd LinuxClass
-
-**Explain what happened and why? 
-
-***While typing the commands don't use #. this # indicaes the shell prompt. # is the promt for root user and $ is the prompt for the other users.
-
 
 
